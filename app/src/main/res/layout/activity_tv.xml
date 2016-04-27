@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/tv"
+            android:text="@string/door"
             android:id="@+id/tvView"
             android:layout_gravity="center_horizontal"
             android:textSize="32dp" />
@@ -48,18 +48,13 @@
         android:layout_marginTop="66dp"
         android:id="@+id/linearLayout2">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/bedroom"
-            android:id="@+id/bedTv" />
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/sittingroom"
+            android:text="@string/lockStatus"
             android:id="@+id/sittingroomTv"
             android:layout_marginTop="50dp" />
 
@@ -73,10 +68,7 @@
         android:layout_alignEnd="@+id/linearLayout"
         android:id="@+id/linearLayout3">
 
-        <Switch
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/switch1" />
+
 
         <Switch
             android:layout_width="wrap_content"
