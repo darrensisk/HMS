@@ -37,36 +37,18 @@
         android:layout_marginTop="66dp"
         android:id="@+id/linearLayout2">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/kitchen"
-            android:id="@+id/kitchenLight" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="108dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/sittingroom"
+            android:text="@string/lighting"
             android:id="@+id/sittingroomLight"
-            android:layout_marginTop="40dp" />
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="30dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/bedroom"
-            android:id="@+id/bedroomLight"
-            android:layout_marginTop="40dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/outside"
-            android:id="@+id/outsideLight"
-            android:layout_marginTop="40dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -77,29 +59,17 @@
         android:layout_alignEnd="@+id/linearLayout"
         android:id="@+id/linearLayout3">
 
-        <Switch
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/switch1" />
 
-        <Switch
+
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/switch2"
-            android:layout_marginTop="40dp" />
+            android:layout_marginTop="40dp"
+            android:background="#ff4848"
+            android:text="@string/off" />
 
-        <Switch
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/switch3"
-            android:layout_marginTop="40dp" />
 
-        <Switch
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/switch4"
-            android:checked="false"
-            android:layout_marginTop="40dp" />
     </LinearLayout>
 
     <LinearLayout
