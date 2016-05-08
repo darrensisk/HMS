@@ -17,13 +17,10 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 
-import java.io.IOException;
-import java.net.HttpURLConnection;
 
 
 public class LightingActivity extends AppCompatActivity {
 
-    private boolean on;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +44,7 @@ public class LightingActivity extends AppCompatActivity {
     private void findAllViewsById(){
 
         Button back = (Button) findViewById(R.id.backButton);
-        Button light = (Button) findViewById(R.id.switch2);
+        final Button light = (Button) findViewById(R.id.switch2);
         back.setOnClickListener(new View.OnClickListener() {
 
 
@@ -64,6 +61,8 @@ public class LightingActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                light.setBackgroundColor(0xFF00FF00);
+                light.setText("ON");
 
                 new lightSwitch().execute();
             }
@@ -80,13 +79,13 @@ public class LightingActivity extends AppCompatActivity {
 
               @Override
               protected Void doInBackground(Void... params) {
-                  String URL = " ";
+                  String URL = "192.168.43.237";
                   HttpURLConnection con;
                   StringBuffer sb = new StringBuffer();
 
 
                   try {
-                      con = (HttpURLConnection) new URL("http://" + URL + "/lights").openConnection();
+                      con = (HttpURLConnection) new URL("http://" + URL + "/?query=lightOn").openConnection();
                       con.setRequestMethod("GET");
 
                       BufferedReader reader = new BufferedReader(new InputStreamReader(con.getInputStream()));

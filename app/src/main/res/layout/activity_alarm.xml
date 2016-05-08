@@ -45,7 +45,9 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/activated"
-            android:id="@+id/kitchenLight" />
+            android:id="@+id/kitchenLight"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp" />
 
     </LinearLayout>
 
@@ -57,10 +59,21 @@
         android:layout_alignEnd="@+id/linearLayout"
         android:id="@+id/linearLayout3">
 
-        <Switch
-            android:layout_width="wrap_content"
+        <Button
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/switch1" />
+            android:id="@+id/switch1"
+            android:layout_marginTop="40dp"
+            android:background="#ffea48"
+            android:text="Trigger Alarm" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/alarmOffButton"
+            android:layout_marginTop="40dp"
+            android:background="#ff4848"
+            android:text="Turn alarm Off" />
 
 
     </LinearLayout>
